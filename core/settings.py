@@ -123,7 +123,8 @@ REST_FRAMEWORK = {
     ],
 }
 
-BACKEND_BASE_URL = "http://localhost:8000"
+BACKEND_BASE_URL = "https://food-api-o58i.onrender.com/api"
+# BACKEND_BASE_URL = "http://localhost:8000"
 
 
 SIMPLE_JWT = {
@@ -211,8 +212,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'api.User'
 
 # settings.py
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = os.getenv('EMAIL_HOST', 'smtp.gmail.com')
 EMAIL_PORT = int(os.getenv('EMAIL_PORT', 587))
 EMAIL_USE_TLS = os.getenv('EMAIL_USE_TLS', 'True') == 'True'
