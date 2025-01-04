@@ -30,7 +30,7 @@ SECRET_KEY = os.getenv('SECRET_KEY', )
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DJANGO_DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['*', 'http://localhost:5173'] 
+ALLOWED_HOSTS = ['*', 'https://food-delivery-prj-react.onrender.com'] 
 
 
 # Application definition
@@ -57,7 +57,10 @@ INSTALLED_APPS = [
 
 
 
-CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_ALL_ORIGINS = [
+    'https://food-delivery-prj-react.onrender.com',
+    'http://localhost:5173',
+]
 CORS_ALLOW_CREDENTIALS = True
 
 MIDDLEWARE = [
@@ -160,7 +163,7 @@ SOCIALACCOUNT_AUTO_SIGNUP = True
 
 SOCIALACCOUNT_STORE_TOKENS = True
 
-FRONTEND_URL='http://localhost:5173'
+FRONTEND_URL='https://food-delivery-prj-react.onrender.com'
 
 LOGIN_REDIRECT_URL = '/callback/'
 
