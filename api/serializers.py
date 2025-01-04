@@ -99,7 +99,7 @@ class MealSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Meals
-        fields = ['uid', 'title', 'image', 'category', 'price', 'image_url']
+        fields = ['uid', 'title', 'image', 'category','toppicks', 'price', 'image_url']
         read_only_fields = ['uid']
 
     def get_image(self, obj):
