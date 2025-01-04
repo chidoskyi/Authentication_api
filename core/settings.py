@@ -123,7 +123,7 @@ REST_FRAMEWORK = {
     ],
 }
 
-BACKEND_BASE_URL = "https://food-api-o58i.onrender.com/api"
+BACKEND_BASE_URL = "https://food-api-o58i.onrender.com"
 # BACKEND_BASE_URL = "http://localhost:8000"
 
 
